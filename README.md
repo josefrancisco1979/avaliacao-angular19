@@ -1,59 +1,61 @@
-# AvaliacaoAngular19
+ # 📘 Avaliação Angular 19 - 30 Pontos
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.0.2.
+Este projeto foi desenvolvido como parte da Avaliação do curso **Desenvolvimento Web com Angular 19** no **SENAI Maracanã**, sob orientação do professor **Nivaldo Araújo**.
 
-## Development server
+## 🎯 Objetivo
 
-To start a local development server, run:
+Aplicar os conceitos de:
+- Componentização standalone
+- Serviços com `@Injectable`
+- Consumo de API REST com `HttpClient`
+- Navegação por rotas
+- Estilização com CSS direto no componente
+
+---
+
+## 🛠️ Funcionalidades
+
+### 🏠 Página Inicial
+
+- Exibe dois botões:
+  - **Calcular Área ao Quadrado**
+  - **Autenticar e Listar Dados**
+- Cada botão redireciona para um componente específico.
+
+### 🔲 Componente `calcularQuadrado`
+
+- Permite digitar **largura** e **altura**
+- Calcula: `(largura × altura)²` via service
+- Exibe o resultado formatado
+
+### 🔐 Componente `authApi`
+
+- Faz requisição à API pública:
+  - `https://jsonplaceholder.typicode.com/posts`
+- Exibe os campos `title` e `body` em uma tabela
+- Estilização simples e funcional
+
+---
+
+## 🔧 Tecnologias
+
+- Angular 19 (Standalone)
+- TypeScript
+- HTML & CSS
+- Angular Router
+- Angular HttpClient
+
+---
+
+## 🚀 Como executar
 
 ```bash
+# Clonar o repositório
+git clone https://github.com/SEU_USUARIO/avaliacao-angular19.git
+cd avaliacao-angular19
+
+# Instalar dependências
+npm install
+
+# Rodar o projeto
 ng serve
-```
-
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
-
-## Code scaffolding
-
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
-
-```bash
-ng generate component component-name
-```
-
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
-
-```bash
-ng generate --help
-```
-
-## Building
-
-To build the project run:
-
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
