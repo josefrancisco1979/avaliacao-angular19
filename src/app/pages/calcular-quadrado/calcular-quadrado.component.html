@@ -1,0 +1,19 @@
+<div style="max-width: 400px; margin: 40px auto; padding: 24px; background: #fff; border-radius: 10px; box-shadow: 0 2px 8px #0001;">
+  <h2 style="text-align:center; color:#0984e3;">Calcular Área ao Quadrado</h2>
+  <label>Largura:</label>
+  <input type="number" [(ngModel)]="largura" style="width:100%;margin-bottom:12px;" />
+
+  <label>Altura:</label>
+  <input type="number" [(ngModel)]="altura" style="width:100%;margin-bottom:12px;" />
+
+  <button (click)="calcular()" style="width:100%;padding:10px;background:#0984e3;color:#fff;border:none;border-radius:5px;font-size:1rem;">
+    Calcular
+  </button>
+
+ <div *ngIf="resultado !== null" style="margin-top:20px;text-align:center;">
+  <p style="font-size:1.2rem;color:#00b894;">Resultado: <b>{{ resultado }}</b></p>
+</div>
+<div *ngIf="erro" style="margin-top:20px;text-align:center;color:#d63031;">
+  {{ erro }}
+</div>
+</div>

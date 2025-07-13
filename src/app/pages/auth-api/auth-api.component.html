@@ -1,0 +1,17 @@
+<div style="max-width: 900px; margin: 40px auto; padding: 24px; background: #fff; border-radius: 10px; box-shadow: 0 2px 8px #0001;">
+  <h2 style="text-align:center; color:#00b894;">Posts da API</h2>
+  <table style="width:100%;border-collapse:collapse;margin-top:20px;">
+    <thead>
+      <tr style="background:#f5f6fa;">
+        <th style="padding:8px;border-bottom:2px solid #00b894;">Título</th>
+        <th style="padding:8px;border-bottom:2px solid #00b894;">Conteúdo</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let post of posts">
+        <td style="padding:8px;border-bottom:1px solid #eee;">{{ post.title }}</td>
+        <td style="padding:8px;border-bottom:1px solid #eee;">{{ post.body }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>

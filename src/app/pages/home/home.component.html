@@ -1,0 +1,14 @@
+ <!-- home.component.html -->
+<div style="display: flex; flex-direction: column; align-items: center; justify-content: center; min-height: 80vh; background: #f5f6fa;">
+  <h1 style="margin-bottom: 32px; color: #2d3436;">Bem-vindo à Avaliação Angular 19</h1>
+  <div style="display: flex; gap: 16px;">
+    <button type="button" [routerLink]="['/calcular-quadrado']"
+      style="padding: 12px 24px; background: #0984e3; color: #fff; border: none; border-radius: 6px; font-size: 1rem; cursor: pointer;">
+      Calcular Área ao Quadrado
+    </button>
+    <button type="button" [routerLink]="['/auth-api']"
+      style="padding: 12px 24px; background: #00b894; color: #fff; border: none; border-radius: 6px; font-size: 1rem; cursor: pointer;">
+      Autenticar e Listar Dados
+    </button>
+  </div>
+</div>
